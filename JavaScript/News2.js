@@ -23,7 +23,7 @@ function myFunction(imgs) {
   }
 
 function Change_Background(){
-  var Lista_Bground = [ 'Bground.jpg', 'Bground1.jpg', 'Bground2.jpg'];
+  var Lista_Bground = [ './Photos/Bground.jpg', './Photos/Bground1.jpg', './Photos/Bground2.jpg'];
     var random_number = Math.floor((Math.random() * 10000)) % Lista_Bground.length;
   var item = document.getElementById("bd");
   item.style.backgroundImage = 'url(' + Lista_Bground[random_number] + ')';
