@@ -6,7 +6,9 @@
     <script src="./JavaScript/News2.js"></script>
 </head>
 <body id="bd">
-  <button id="Bground" onclick="Change_Background()">Change Backround</button>
+  <div id="OverWord" class="DummyClassWord"><p id = "Text_alert">3 </p></div>
+  <div id="OverLay" class="DummyClass"></div>
+  <button id="Bground" onclick="Change_Background()">Change Background</button>
 
     <div class="content">
         <nav >
@@ -17,7 +19,7 @@
                    
             </ul>
         </nav>
-        <h1 id = "title">Tech News </h1>
+        <h1 id = "title"></h1>
         <div class="row">
             <div class="column">
               <img src="./Photos/34.jpg" alt="Super" style="width: 280px;height:186px;" onclick="myFunction(this);">
@@ -47,6 +49,9 @@
         <button id="Citeste" style="background-color: greenyellow;" onclick="Display_Txt_File()">Citeste mai departe</button>
         <iframe id = "iframe" width="560" height="315" src="https://www.youtube.com/embed/G_3m26ZJV0c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </iframe>
+      <footer>
+        <div id='timer'></div>
+      </footer>
     </div>
     
 </body>

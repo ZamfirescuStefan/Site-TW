@@ -73,3 +73,9 @@ body{
     margin-left: 60px; 
     margin-top: 22px;  
 }
+
+#timer{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+  }

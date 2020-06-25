@@ -160,3 +160,34 @@ body{
     margin-top: 60px;
     margin-left: 300px;
   }
+
+  .DummyClass{
+    left:0px;
+}
+
+.DummyClassWord{
+    display: none;
+}
+
+.overlay{
+  opacity:1;
+  background-color: red;
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  z-index:10;
+}
+
+.overlayOnText{
+  display: inline;
+  position: fixed;
+  font-size: 110px;
+  z-index:11;
+}
+#timer{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 25px;
+}

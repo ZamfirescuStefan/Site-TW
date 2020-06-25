@@ -89,3 +89,21 @@ var quiz = new Quiz(questions);
  
 
 populate();
+
+function ages()
+{
+    var x=document.getElementById("date").value;
+    var y=x.split("#")
+    var year_born=y[1]+"/"+y[0]+"/"+y[2];
+    var d1=new Date();
+    var d2=new Date(y[1]+"/"+y[0]+"/"+y[2]);
+    var diff = d1.getTime() - d2.getTime();
+    var years=Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+    var months=Math.floor(diff%(1000*60*60*24*365.25)/(1000 * 60 * 60 * 24*30));
+    var days = Math.floor(diff %(1000 * 60 * 60 * 24)/(1000*60*60));
+    var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    document.getElementById("age").innerHTML="Vârsta dumneavoastră este: "+years+" ani "+months+" luni si "+days+" zile, "+hours +" ore "+minutes+" minute "+seconds+" secunde!";
+    setTimeout(ages, 1000);
+}
